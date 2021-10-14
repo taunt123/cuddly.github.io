@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 75px;
+        }
+        body{
+            display: flex;
+        }
+       
+        .box{
+            width: 3.7866667rem;
+            height: 2.8rem;
+            position: relative;
+            background-color: cornflowerblue;
+            overflow: hidden;
+            
+        }
+        .box:hover .img1{
+            transform: translateX(3.786667rem);
+            transition: 0.7s;
+            z-index: 10;
+        }
+        .box:hover .img2{
+            transform: translateX(-3.786667rem);
+            transition: 0.8s;
+            z-index: 10;
+        }
+        .box:hover .img3{
+          
+            z-index: 8;
+        }
+        /* .box:hover .box>img{
+            opacity: 0;
+            z-index: -10;
+        } */
+        .img1{
+            width: 3.786667rem;
+            height: 2.8rem;
+            position: absolute;
+            top: 0;
+            left: -3.786667rem;
+           
+            
+        }
+        .img2{
+            width: 3.786667rem;
+            height: 2.8rem;
+            position: absolute;
+            top: 0;
+            right:  -3.786667rem;
+            /* background: blue;
+            opacity: 0.5; */
+           
+        } 
+        .img2 img,.img1 img{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -0.666667rem;
+            bottom: 0;
+            margin: auto;
+
+        }
+        .img3{
+            width: 3.786667rem;
+            height: 2.8rem;
+            position: absolute;
+            top: 0;
+            right:  0;
+            z-index: -10;
+            background: #1D98DE;
+            opacity: 0.9;
+            font-size: .266667rem;
+            color: #fff;
+            text-align: center;
+            line-height: 3.733333rem;
+           
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="box">
+            <div class="img1">
+                <img src="./img/a39656eb9cc7d6d58bda21a5a18e3cb2_i5.png" alt="">
+            </div>
+            <!-- <div> -->
+                <img src="./img/pc端_36.png" alt="">
+            <!-- </div> -->
+            <div class="img2">
+                <img src="./img/7626ee82376a547836139161b755201e_i6.png" alt="">
+            </div>
+            <div class="img3">坎坎坷坷</div>
+        </div>
+   
+   
+    
+</body>
+
+</html>
